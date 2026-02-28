@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOS AMAZÔNIA - Protegendo o Coração do Mundo</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1e813f',
+                        secondary: '#38a169',
+                        action: '#d9534f',
+                        dark: '#1a202c',
+                        light: '#f7fafc',
+                    },
+                    boxShadow: {
+                        'lg-primary': '0 10px 15px -3px rgba(30, 129, 63, 0.3), 0 4px 6px -2px rgba(30, 129, 63, 0.1)',
+                    },
+                    fontFamily: {
+                        inter: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            background-image: url('amazonia2.jpeg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            filter: brightness(1.25);
+        }
+
+        html { scroll-behavior: smooth; }
+    </style>
+</head>
+
+<body class="font-inter text-gray-800">
+
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center py-4">
+            <a href="index.html" class="text-3xl font-extrabold text-primary tracking-tight">SOS AMAZÔNIA</a>
+
+            <nav class="hidden md:flex space-x-6 text-lg font-medium">
+                <a href="#home" class="text-gray-600 hover:text-primary">Home</a>
+                <a href="#missao-resumo" class="text-gray-600 hover:text-primary">Missão</a>
+                <a href="#membros-resumo" class="text-gray-600 hover:text-primary">Membros</a>
+                <a href="#cadastro" class="text-gray-600 hover:text-primary">Cadastro</a>
+                <a href="#contato-resumo" class="text-gray-600 hover:text-primary">Contato</a>
+            </nav>
+
+            <a href="#" class="bg-action text-white py-2 px-4 rounded-lg font-semibold hover:bg-red-700 hidden sm:block">DOE AGORA</a>
+
+            <button class="md:hidden text-2xl text-primary">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <section id="home" class="relative pt-20 pb-28">
+        <div class="absolute inset-0 opacity-40 bg-black"></div>
+
+        <div class="max-w-7xl mx-auto px-4 relative z-10 text-center text-white">
+            <h1 class="text-6xl font-extrabold drop-shadow-lg">
+                SOS AMAZÔNIA: <span class="text-primary">Protegendo o Pulmão do Mundo</span>
+            </h1>
+
+            <p class="max-w-3xl mx-auto text-xl font-semibold mt-4">
+                Somos uma organização dedicada à conservação da maior floresta tropical do planeta.
+            </p>
+
+            <div class="mt-10 flex flex-col sm:flex-row justify-center gap-6">
+                <a href="#" class="px-8 py-3 text-lg rounded-full text-white bg-primary hover:bg-green-700 shadow-lg-primary transform hover:scale-105">
+                    DOE AGORA
+                </a>
+
+                <a href="#missao-resumo" class="px-8 py-3 text-lg rounded-full text-primary border-2 border-primary bg-white hover:bg-gray-200 shadow-md transform hover:scale-105">
+                    Conheça Nossa Missão
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="missao-resumo" class="py-24 bg-white/90 backdrop-blur-md rounded-xl mx-4">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h2 class="text-base text-primary font-semibold uppercase">NOSSO COMPROMISSO</h2>
+            <p class="text-4xl font-extrabold text-gray-900">Por que a Amazônia importa?</p>
+        </div>
+
+        <div class="mt-12 text-lg text-gray-700 space-y-6 max-w-5xl mx-auto">
+            <p class="text-center font-bold">
+                Trabalhamos em três pilares principais: Apoio Comunitário, Fiscalização Tecnológica e Restauração Ecológica.
+            </p>
+
+            <div class="grid md:grid-cols-3 gap-8 pt-8">
+                <div class="text-center p-6 bg-gray-50 rounded-xl shadow-lg hover:shadow-xl">
+                    <i class="fas fa-hand-holding-heart text-4xl text-action mb-4"></i>
+                    <h3 class="text-xl font-bold">Apoio Local</h3>
+                    <p>Trabalhamos com povos nativos que protegem a floresta.</p>
+                </div>
+
+                <div class="text-center p-6 bg-gray-50 rounded-xl shadow-lg hover:shadow-xl">
+                    <i class="fas fa-satellite-dish text-4xl text-primary mb-4"></i>
+                    <h3 class="text-xl font-bold">Monitoramento</h3>
+                    <p>Usamos tecnologia para denunciar crimes ambientais.</p>
+                </div>
+
+                <div class="text-center p-6 bg-gray-50 rounded-xl shadow-lg hover:shadow-xl">
+                    <i class="fas fa-seedling text-4xl text-green-600 mb-4"></i>
+                    <h3 class="text-xl font-bold">Reflorestamento</h3>
+                    <p>Recuperamos áreas degradadas com espécies nativas.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center pt-10">
+            <a href="#" class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-full text-white bg-action hover:bg-red-700 transition duration-300">
+                Saiba Mais Sobre Nossos Projetos <i class="fas fa-arrow-right ml-2"></i>
+            </a>
+        </div>
+    </section>
+
+    <section id="newsletter" class="py-16 bg-primary text-white">
+        <div class="max-w-3xl mx-auto text-center px-4">
+            <h2 class="text-4xl font-extrabold">Receba Nossas Atualizações!</h2>
+            <p class="mt-3 text-xl opacity-90">Notícias urgentes e avanços do reflorestamento.</p>
+
+            <form id="newsletter-form" class="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
+                <input type="email" required placeholder="Digite seu e-mail"
+                        class="px-4 py-3 rounded-full text-gray-900 w-full sm:w-80">
+                <button class="px-8 py-3 rounded-full bg-action hover:bg-red-700 text-white">Inscrever-se</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="membros-resumo" class="py-24 bg-gray-100">
+        <div class="max-w-7xl mx-auto text-center px-4">
+            <h2 class="text-base text-primary font-semibold uppercase">NOSSA EQUIPE</h2>
+            <p class="mt-1 text-4xl font-extrabold text-gray-900">Os Rostos Por Trás da Missão</p>
+
+            <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:scale-[1.02] transition">
+                    <img class="w-24 h-24 rounded-full mx-auto" src="https://placehold.co/96x96/767676/fff?text=H">
+                    <h3 class="mt-4 text-xl font-bold">Dr. Helena Mendes</h3>
+                    <p class="text-primary">Pesquisa Ecológica</p>
+                    <p class="mt-3 text-gray-600 text-sm">Especialista em biodiversidade e habitats fluviais.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:scale-[1.02] transition">
+                    <img class="w-24 h-24 rounded-full mx-auto" src="https://placehold.co/96x96/767676/fff?text=J">
+                    <h3 class="mt-4 text-xl font-bold">João Kampa</h3>
+                    <p class="text-primary">Coord. Comunitário</p>
+                    <p class="mt-3 text-gray-600 text-sm">Atuação com comunidades ribeirinhas.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:scale-[1.02] transition">
+                    <img class="w-24 h-24 rounded-full mx-auto" src="https://placehold.co/96x96/767676/fff?text=A">
+                    <h3 class="mt-4 text-xl font-bold">Ana Lúcia Pires</h3>
+                    <p class="text-primary">Leis Ambientais</p>
+                    <p class="mt-3 text-gray-600 text-sm">Defesa de políticas públicas de proteção.</p>
+                </div>
+            </div>
+
+            <div class="text-center pt-10">
+                <a href="#" class="px-6 py-3 rounded-full border-2 border-primary text-primary hover:bg-gray-100">
+                    Ver Equipe Completa <i class="fas fa-users ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="cadastro" class="py-32 bg-white/90 backdrop-blur-md mx-4 rounded-xl">
+        <div class="max-w-xl mx-auto px-4 text-center">
+            <h2 class="text-4xl font-extrabold text-dark">Torne-se um Membro</h2>
+            <p class="text-xl text-gray-600">Crie sua conta para acessar conteúdos exclusivos.</p>
+        </div>
+
+        <div class="max-w-xl mx-auto bg-white p-8 rounded-lg shadow-lg border mt-10">
+            <form id="register-form" class="space-y-6" action="grava.jsp">
+                <div>
+                    <label class="block text-sm font-medium">Nome Completo</label>
+                    <input name="register-name"  id="register-name" type="text" required class="w-full px-4 py-2 border rounded-md">
+                </div>
+
+                <div>
+                    <label class="block text-sm font-medium">Email</label>
+                    <input name="register-email" id="register-email" type="email" required class="w-full px-4 py-2 border rounded-md">
+                </div>
+
+                <div>
+                    <label class="block text-sm font-medium">Senha</label>
+                    <input name="register-password" id="register-password" type="password" required class="w-full px-4 py-2 border rounded-md">
+                </div>
+
+                <button type="submit" class="w-full py-3 rounded-md text-lg font-medium text-white bg-action hover:bg-red-700">
+                    Cadastrar
+                </button>
+            </form>
+            </div>
+    </section>
+
+    <section id="contato-resumo" class="py-24 bg-action text-white text-center">
+        <h2 class="text-5xl font-extrabold">Fale Conosco</h2>
+        <p class="mt-4 text-xl opacity-90">Seja voluntário, parceiro ou envie suas dúvidas.</p>
+
+        <div class="mt-8">
+            <a href="#" class="px-8 py-3 rounded-full bg-white text-action hover:bg-gray-200 shadow-xl">
+                Enviar Mensagem <i class="fas fa-envelope ml-2"></i>
+            </a>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-gray-400 py-8 text-center">
+        <p>&copy; 2025 SOS AMAZÔNIA. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        // Adiciona um container de mensagens para o feedback do PHP
+        const registerForm = document.getElementById("register-form");
+        const messageContainer = document.createElement('div');
+        messageContainer.id = 'register-message';
+        messageContainer.className = 'mt-4 p-3 text-sm rounded-md hidden text-center';
+        
+        // Insere o container logo após o bloco do formulário na seção
+        if (registerForm) {
+            registerForm.parentNode.parentNode.insertBefore(messageContainer, registerForm.parentNode.nextSibling);
+        }
+
+        // document.getElementById("register-form").addEventListener("submit", async function(e) {
+        //     e.preventDefault();
+
+        //     const name = document.getElementById("register-name").value;
+        //     const email = document.getElementById("register-email").value;
+        //     const password = document.getElementById("register-password").value;
+        //     const messageDiv = document.getElementById("register-message");
+            
+        //     messageDiv.classList.add("hidden"); 
+        //     messageDiv.textContent = ""; 
+            
+        //     const dataToSend = { name, email, password };
+
+        //     try {
+        //         // 🚨 PAREAMENTO COM O PHP AQUI! URL deve apontar para o seu register.php
+        //         const response = await fetch('http://localhost/sos4/api/register.php', { 
+        //             method: 'POST',
+        //             headers: {
+        //                 'Content-Type': 'application/json',
+        //             },
+        //             body: JSON.stringify(dataToSend)
+        //         });
+        //         console.log("AQUI OK 1");
+        //         const result = await response.json(); // Espera a resposta JSON do PHP
+        //         console.log("AQUI OK 2");
+                
+        //         if (response.ok && result.success) {
+        //             // SUCESSO NO CADASTRO (Status 200 do PHP)
+        //             messageDiv.textContent = result.message || "Cadastro realizado com sucesso!";
+        //             messageDiv.className = "mt-4 p-3 text-sm rounded-md text-center bg-green-100 text-green-800";
+        //             messageDiv.classList.remove("hidden");
+        //             this.reset();
+        //             console.log("AQUI OK 3");
+                    
+        //         } else {
+        //             // ERRO (E-mail já existe, campos vazios, etc. - Status 400 ou 500 do PHP)
+        //             messageDiv.textContent = result.message || "Erro no cadastro. Verifique os dados.";
+        //             messageDiv.className = "mt-4 p-3 text-sm rounded-md text-center bg-red-100 text-red-800";
+        //             messageDiv.classList.remove("hidden");
+        //             console.log("AQUI OK 4");
+        //         }
+                
+        //     } catch (error) {
+        //         console.log("AQUI OK 5");
+        //         // ERRO DE CONEXÃO COM O SERVIDOR (XAMPP não está rodando)
+        //         messageDiv.textContent = "Erro de comunicação. O servidor XAMPP está ligado?";
+        //         messageDiv.className = "mt-4 p-3 text-sm rounded-md text-center bg-red-100 text-red-800";
+        //         messageDiv.classList.remove("hidden");
+        //         console.error("Erro de Rede:", error);
+        //     }
+        // });
+    </script>
+</body>
+</html>
